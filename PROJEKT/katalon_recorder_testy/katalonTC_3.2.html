@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>katalonTC_3.2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC_3.2</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>TC_3.2.csv<datalist><option>TC_3.2.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://www.sanibelsupply.eu/customer/account/login/referer/aHR0cHM6Ly93d3cuc2FuaWJlbHN1cHBseS5ldS8%2C/<datalist><option>https://www.sanibelsupply.eu/customer/account/login/referer/aHR0cHM6Ly93d3cuc2FuaWJlbHN1cHBseS5ldS8%2C/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[@id="coiPage-1"]/div[2]/span[2]<datalist><option>//*[@id="coiPage-1"]/div[2]/span[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=login[username]</option><option>//input[@id='email']</option><option>//form[@id='login-form']/fieldset/div[2]/div/input</option><option>//fieldset/div[2]/div/input</option><option>css=#email</option></datalist></td><td>testowaniestrony@wp.pl</td>
+</tr>
+<tr><td>click</td><td>id=pass<datalist><option>id=pass</option><option>name=login[password]</option><option>//input[@id='pass']</option><option>//form[@id='login-form']/fieldset/div[3]/div/input</option><option>//fieldset/div[3]/div/input</option><option>css=#pass</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=pass<datalist><option>id=pass</option><option>name=login[password]</option><option>//input[@id='pass']</option><option>//form[@id='login-form']/fieldset/div[3]/div/input</option><option>//fieldset/div[3]/div/input</option><option>css=#pass</option></datalist></td><td>Tester123</td>
+</tr>
+<tr><td>click</td><td>//button[@id='send2']/span<datalist><option>//button[@id='send2']/span</option><option>//div[4]/div/button/span</option><option>css=#send2 &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@type='button']<datalist><option>//button[@type='button']</option><option>//button</option><option>css=button.action.switch</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>//a[contains(text(),'My Account')]</option><option>//a[contains(@href, 'https://www.sanibelsupply.eu/customer/account/')]</option><option>//li[3]/div/ul/li/a</option><option>css=div.customer-menu &gt; ul.header.links &gt; li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//main[@id='maincontent']/div[3]/div/div[2]/div[2]/div/div[2]/a/span<datalist><option>//main[@id='maincontent']/div[3]/div/div[2]/div[2]/div/div[2]/a/span</option><option>//div[2]/div/div[2]/a/span</option><option>css=div.box-actions &gt; a.action.edit &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=firstname<datalist><option>id=firstname</option><option>name=firstname</option><option>//input[@id='firstname']</option><option>//form[@id='form-validate']/fieldset/div/div/input</option><option>//fieldset/div/div/input</option><option>css=#firstname</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=firstname<datalist><option>id=firstname</option><option>name=firstname</option><option>//input[@id='firstname']</option><option>//form[@id='form-validate']/fieldset/div/div/input</option><option>//fieldset/div/div/input</option><option>css=#firstname</option></datalist></td><td>${firstname}</td>
+</tr>
+<tr><td>click</td><td>id=lastname<datalist><option>id=lastname</option><option>name=lastname</option><option>//input[@id='lastname']</option><option>//form[@id='form-validate']/fieldset/div[2]/div/input</option><option>//fieldset/div[2]/div/input</option><option>css=#lastname</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=lastname<datalist><option>id=lastname</option><option>name=lastname</option><option>//input[@id='lastname']</option><option>//form[@id='form-validate']/fieldset/div[2]/div/input</option><option>//fieldset/div[2]/div/input</option><option>css=#lastname</option></datalist></td><td>${lastname}</td>
+</tr>
+<tr><td>click</td><td>//form[@id='form-validate']/div[2]/div/button/span<datalist><option>//form[@id='form-validate']/div[2]/div/button/span</option><option>//div[2]/div/button/span</option><option>css=button.action.save.primary &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//*[@id="maincontent"]/div[2]/div[2]/div/div<datalist><option>//*[@id="maincontent"]/div[2]/div[2]/div/div/div</option><option>//*[@id="maincontent"]/div[2]/div[2]/div/div/div/text()</option><option>//*[@id="maincontent"]/div[2]/div[2]/div/div</option></datalist></td><td>You saved the account information.</td>
+</tr>
+<tr><td>captureEntirePageScreenshot</td><td>TC_3.2.png<datalist><option>TC_3.2.png</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Sign Out')])[2]<datalist><option>xpath=(//a[contains(text(),'Sign Out')])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td>TC_3.2.csv<datalist><option>TC_3.2.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>close</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
